@@ -16,8 +16,9 @@ Impoverished countries have difficulties in having access to clean water. Water 
 Furthermore, it is estimated that people living in water poverty struck places usually have to walk around 3-5 miles per day to have access to questionable water supply. 
 
 The stakeholders are the Tanzanian public policy makers and government, NGO's and the general public - not only the ones that use that well, but all the other communities and people interested.
-
-<img src="https://github.com/ovilar/phase_3-project/blob/main/img/img01.png" alt="Water Pump Geo Location by Status - Tanzania">
+<div style="width=1026px; height=986px;">
+    <img src="https://github.com/ovilar/phase_3-project/blob/main/img/img01.png" alt="Water Pump Geo Location by Status - Tanzania" width="70%" height="70%">
+</div>
 
 ## Data and Analysis
 
@@ -29,8 +30,9 @@ I use three different models to assess their predictive abilities in spotting wh
 
 Furthermore, whenever assessing which model is the best, we should have in mind which loss function or metric we are going to use to evaluate its performance. Since the presence of both false positives and false negatives can be costly to our stakeholders, I posit that the best sought-out metric should be the f1-score. This metric will balance the combination of precision and recall, helping stakeholders. The performance of the models can be found below:
 
-<img src="https://github.com/ovilar/phase_3-project/blob/main/img/img02.png" alt ="ML models' scores on testing data">
-
+<div style="width=1243px; height=976px;">
+    <img src="https://github.com/ovilar/phase_3-project/blob/main/img/img02.png" alt ="ML models' scores on testing data" width="60%" height="60%">
+</div>
 ## Conclusion
 The logistic regression model provides a 80% adhesion to predict whether a water pump - given its features - is functional or not. This is helpful to aid in the design of public policies, when/which water pumps need to be fixed and providing informational assets to communities that use water pumps. 
 
