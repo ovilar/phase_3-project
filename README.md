@@ -25,10 +25,23 @@ The data can be found at <a href='https://www.drivendata.org/competitions/7/pump
 ## Machine Learning Workflow
 I use three different models to assess their predictive abilities in spotting whether a well is functional or not. The usual workflow starts with building pipelines so I can apply imputers and encoders to the DataFrame. After those steps, I run the models and when applicable, tune their hyperparameters using Grid Search and Cross Validation. 
 
+<div style="width=826px; height=564px;">
+    <img src="https://github.com/ovilar/phase_3-project/blob/main/img/img02.png" alt="Confusion Matrix on Testing Data" width="70%" height="70%">
+</div>
+
 Furthermore, whenever assessing which model is the best, we should have in mind which loss function or metric we are going to use to evaluate its performance. Since the presence of both false positives and false negatives can be costly to our stakeholders, I posit that the best sought-out metric should be the f1-score. This metric will balance the combination of precision and recall, helping stakeholders. 
 
 ## Conclusion
-The RandomForestClassifier model provides a 85% f1-score adhesion when predicting whether a water pump - given its features - is functional or not. This is helpful to aid in the design of public policies, when/which water pumps need to be fixed and providing informational assets to communities that use water pumps. 
+The RandomForestClassifier model provides a 85% f1-score adhesion when predicting whether a water pump - given its features - is functional or not. This is helpful to aid in the design of public policies, when/which water pumps need to be fixed and providing informational assets to communities that use water pumps.
+
+### Recommendations
+The results suggests two takeaways from this exercise. Stakeholders might follow two suggested pathways:
+<ul>
+    <li><b>Prophylactic</b>: the best model predicts whether a pump is functional or not with consistency. This can lead to and understanding of which pumps needs to be fixed in advance;</li>
+    <li><b>Expansion</b>: areas with less pumps could be used under an expansion plan to provide new facilities to the general population. That can lead to diminished traveling distance.</li>
+</ul>
+
+Lastly, the most relevant features when predicting pump status are: funder, the date the information was recorded and the amount of water available.
 
 ### Further Research
 Even though the data has its limitations, it is a rich dataset to work with. Further research could indicate not also functional and not functional, but also consider the original label of functional needs repairs. Furthermore, combining the dataset with socio-economical Tanzania statistics can provide more assertiveness when designing public policies.
