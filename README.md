@@ -28,7 +28,7 @@ I use three different models to assess their predictive abilities in spotting wh
 Furthermore, whenever assessing which model is the best, we should have in mind which loss function or metric we are going to use to evaluate its performance. Since the presence of both false positives and false negatives can be costly to our stakeholders, I posit that the best sought-out metric should be the f1-score. This metric will balance the combination of precision and recall, helping stakeholders. 
 
 ## Conclusion
-The RandomForestClassifier model provides a 89% (85% with cross validation) f1-score adhesion when predicting whether a water pump - given its features - is functional or not. This is helpful to aid in the design of public policies, when/which water pumps need to be fixed and providing informational assets to communities that use water pumps. 
+The RandomForestClassifier model provides a 85% f1-score adhesion when predicting whether a water pump - given its features - is functional or not. This is helpful to aid in the design of public policies, when/which water pumps need to be fixed and providing informational assets to communities that use water pumps. 
 
 ### Further Research
 Even though the data has its limitations, it is a rich dataset to work with. Further research could indicate not also functional and not functional, but also consider the original label of functional needs repairs. Furthermore, combining the dataset with socio-economical Tanzania statistics can provide more assertiveness when designing public policies.
